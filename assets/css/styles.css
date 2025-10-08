@@ -29,6 +29,10 @@ body {
     background: var(--primary-color);
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
 .btn-white {
     display: inline-block;
     min-width: 108px;
@@ -89,15 +93,20 @@ a {
 }
 
 /* Header */
+.header {
+    padding: 36px 0 8px;
+    background: #fff;
+}
+
 .header .body {
     display: flex;
     align-items: center;
-    padding: 36px 0 8px;
 }
 
 .header.fixed {
     position: sticky;
     top: -28px;
+    z-index: 1;
 }
 
 .header .nav {
@@ -151,4 +160,216 @@ a {
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
+}
+
+/* Hero */
+.hero {
+    background: #fff;
+    padding: 42px 0 79px;
+}
+
+.hero .body {
+    display: flex;
+    align-items: center;
+}
+
+.hero .content {
+    width: 45%;
+}
+
+.hero .content .eyebrow-text {
+    color: #767e7e;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
+.hero .content .desc {
+    width: 71%;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    margin: 46px 0 52px;
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero .cta-group .btn:hover {
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero .cta-group .watch-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.hero .media-block {
+    position: relative;
+    width: 55%;
+}
+
+.hero .media-block .image {
+    display: block;
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+.hero .media-block .title {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero .courses {
+    position: absolute;
+    top: 149px;
+    left: 25px;
+    display: inline-flex;
+    gap: 16px;
+    align-items: center;
+    padding: 18px 25px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero .courses .icon {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    background: #ff8282;
+    border-radius: 5px 2px 2px 5px;
+}
+
+.hero .courses .icon::before {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: inline-block;
+    content: "";
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.hero .courses .info {
+    min-width: 55px;
+}
+
+.hero .courses .label {
+    margin-bottom: 3px;
+}
+
+.hero .schedules {
+    position: absolute;
+    bottom: 46px;
+    left: 0;
+    display: inline-block;
+    padding: 16px 25px 23px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero .schedules .title {
+    text-align: center;
+}
+
+.hero .schedules .timeline {
+    margin-top: 16px;
+}
+
+.hero .schedules .decor-bar,
+.hero .schedules .timeline-bar {
+    width: 100%;
+    min-width: 74px;
+    height: 6px;
+    border-radius: 3px;
+    background: #edf1f5;
+    margin-bottom: 12px;
+}
+
+.hero .schedules .progress {
+    height: 6px;
+    border-radius: 3px;
+    background: #fb9899;
+}
+
+.hero .timeline .timeline-bar:nth-child(1) .progress {
+    width: 50%;
+}
+
+.hero .timeline .timeline-bar:nth-child(2) .progress {
+    width: 70%;
+}
+
+.hero .timeline .timeline-bar:nth-child(3) .progress {
+    width: 45%;
+}
+
+.hero .schedules .decor-bar {
+    width: 35%;
+    min-width: initial;
+    margin: 16px auto 0;
+}
+
+.hero .list {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    display: inline-block;
+    padding: 17px 35px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0 12px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero .list .title {
+    margin-bottom: 8px;
+}
+
+.hero .list .avatar-group {
+    display: flex;
+}
+
+.hero .list .avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -10px;
+}
+
+.hero .list .avatar:first-child {
+    margin-left: 0;
+}
+
+.hero .list .more-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1ebfc1;
+}
+
+.hero .more-info .stats {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
