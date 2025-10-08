@@ -26,7 +26,17 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     border-radius: 14px;
-    background: #1ebfc1;
+    background: var(--primary-color);
+}
+
+.btn-white {
+    display: inline-block;
+    min-width: 108px;
+    line-height: 48px;
+    padding: 0 24px;
+    text-align: center;
+    border-radius: 6px;
+    background: #fff;
 }
 
 a {
@@ -76,4 +86,69 @@ a {
 
 .break-word {
     word-wrap: break-word;
+}
+
+/* Header */
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.header .nav a {
+    padding: 12px 19.5px;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.nav a:hover,
+.nav li.active a {
+    text-shadow: 1px 0px 0px currentColor;
+}
+
+.header .action {
+    display: flex;
+    width: 29%;
+    gap: 2px;
+}
+
+.header .sign-in-btn {
+    margin-left: auto;
+    color: #494949;
+    font-size: 1.6rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .sign-in-btn:hover {
+    border: 1px solid #494949;
+    text-shadow: 1px 0 0 currentColor;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .sign-up-btn {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.header .sign-up-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
 }
