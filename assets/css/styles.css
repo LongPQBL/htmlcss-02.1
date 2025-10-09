@@ -230,6 +230,7 @@ a {
     height: 631px;
     object-fit: cover;
     margin-left: auto;
+    background: #e0f7f6;
 }
 
 .hero .media-block .title {
