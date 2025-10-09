@@ -70,16 +70,12 @@ a {
 }
 
 .heading.lv2 {
-    font-size: 42px;
+    font-size: 4.2rem;
     line-height: 1.33;
 }
 
 .heading.lv3 {
-    font-size: 22px;
-}
-
-.heading.lv4 {
-    font-size: 20px;
+    font-size: 2.2rem;
 }
 
 .line-clamp {
@@ -378,4 +374,62 @@ a {
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* Features */
+.features {
+    padding: 130px 0 65px;
+}
+
+.features .content {
+    width: 50.5%;
+    margin-bottom: 80px;
+}
+
+.features .content .sub-title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features .content .heading {
+    margin: 18px 0;
+}
+
+.features .content .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.features .list-features {
+    display: flex;
+}
+
+.features .feature-item:nth-child(1) {
+    width: 168px;
+    margin-right: 210px;
+}
+
+.features .feature-item:nth-child(2) {
+    width: 224px;
+    margin-right: 200px;
+}
+
+.features .feature-item:nth-child(3) {
+    width: 224px;
+}
+
+.features .feature-item .title {
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 26px;
+}
+
+.features .feature-item .desc {
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    margin-top: 16px;
 }
