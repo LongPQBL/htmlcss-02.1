@@ -436,38 +436,38 @@ a {
 }
 
 /* Courses */
-.courses {
+.courses-section {
     padding: 65px 0 189px;
 }
 
-.courses .content {
+.courses-section .content {
     margin-bottom: 79px;
 }
 
-.courses .content .sub-title {
+.courses-section .content .sub-title {
     color: #767e7e;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.courses .content .heading {
+.courses-section .content .heading {
     margin: 18px 0;
 }
 
-.courses .row {
+.courses-section .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.courses .row .desc {
+.courses-section .row .desc {
     color: #767e7e;
     font-size: 1.8rem;
     line-height: 1.78;
     width: 45%;
 }
 
-.courses .row .link {
+.courses-section .row .link {
     color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 700;
@@ -475,17 +475,17 @@ a {
     text-decoration-style: solid;
 }
 
-.courses .list-courses {
+.courses-section .list-courses {
     display: flex;
     gap: 47px;
 }
 
-.courses .course-item {
+.courses-section .course-item {
     position: relative;
     width: 33.33%;
 }
 
-.courses .course-item::before {
+.courses-section .course-item::before {
     position: absolute;
     content: "";
     display: inline-block;
@@ -496,7 +496,7 @@ a {
     background: #d0efed;
 }
 
-.courses .course-item .thumb {
+.courses-section .course-item .thumb {
     display: block;
     width: 100%;
     height: 393px;
@@ -504,7 +504,7 @@ a {
     object-fit: cover;
 }
 
-.courses .info {
+.courses-section .course-item .info {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -516,37 +516,37 @@ a {
     box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
 }
 
-.courses .info h3 {
+.courses-section .course-item .info h3 {
     margin-bottom: 16px;
 }
 
-.courses .info .fee {
+.courses-section .course-item .info .fee {
     color: #767e7e;
     font-size: 1.6rem;
     margin-bottom: 6px;
 }
 
-.courses .info .desc {
+.courses-section .course-item .info .desc {
     color: #9da6a5;
     font-size: 1.4rem;
     line-height: 1.5;
     margin-bottom: 18px;
 }
 
-.courses .stats {
+.courses-section .course-item .stats {
     display: flex;
     color: #9da6a5;
     font-size: 1.4rem;
 }
 
-.courses .stats span {
+.courses-section .course-item .stats span {
     display: flex;
     align-items: center;
     line-height: 1.5;
     margin-right: 10px;
 }
 
-.courses .stats span::before {
+.courses-section .course-item .stats span::before {
     content: "";
     display: inline-block;
     width: 6px;
