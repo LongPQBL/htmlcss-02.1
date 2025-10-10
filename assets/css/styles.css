@@ -718,3 +718,27 @@ a {
     height: 78px;
     background: #ffc147;
 }
+
+/* Call to Action */
+.cta-section {
+    margin-top: 65px;
+    padding: 76px 0 88px;
+    background: #def6f5;
+}
+
+.cta-section .body {
+    display: flex;
+    align-items: center;
+}
+
+.cta-section .cta-info .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    margin-top: 18px;
+    line-height: 1.5;
+}
+
+.cta-section .cta-btn {
+    background: var(--primary-color-2);
+    margin-left: 410px;
+}
