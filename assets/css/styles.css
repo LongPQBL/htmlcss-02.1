@@ -552,6 +552,32 @@ a {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #1ebfc1;
+    background: var(--primary-color);
     margin-right: 10px;
+}
+
+.stats-section {
+    padding: 65px 0;
+    margin-top: 135px;
+    background: #fff;
+}
+
+.stats-section .body {
+    display: flex;
+    width: 73.7%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.stats-section .qty-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-section .qty-item .qty-desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    margin-top: 11px;
+    line-height: 1.5;
 }
